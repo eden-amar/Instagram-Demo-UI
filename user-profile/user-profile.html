@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user-profile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <ul>
+            <li>
+                <a href="./../index.html"><button class="button text icon enabled " aria-label="Home" title="Home">
+                        <span class="button-state-layer"></span>
+                        <span class="button-label">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 6.19L17 10.69V18.5H15V12.5H9V18.5H7V10.69L12 6.19ZM12 3.5L2 12.5H5V20.5H11V14.5H13V20.5H19V12.5H22L12 3.5Z"
+                                    fill="#001D35" />
+                            </svg>
+
+                        </span>
+                    </button> </a>
+            </li>
+            <li>
+                <button class="button text icon enabled " aria-label="Search" title="Search">
+                    <span class="button-state-layer"></span>
+                    <span class="button-label">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.755 14.255H14.965L14.685 13.985C15.665 12.845 16.255 11.365 16.255 9.755C16.255 6.165 13.345 3.255 9.755 3.255C6.165 3.255 3.255 6.165 3.255 9.755C3.255 13.345 6.165 16.255 9.755 16.255C11.365 16.255 12.845 15.665 13.985 14.685L14.255 14.965V15.755L19.255 20.745L20.745 19.255L15.755 14.255ZM9.755 14.255C7.26501 14.255 5.255 12.245 5.255 9.755C5.255 7.26501 7.26501 5.255 9.755 5.255C12.245 5.255 14.255 7.26501 14.255 9.755C14.255 12.245 12.245 14.255 9.755 14.255Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <button class="button text icon enabled " aria-label="Reels" title="Reels">
+                    <span class="button-state-layer"></span>
+                    <span class="button-label">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4 6.47L5.76 10H20V18H4V6.47ZM22 4H18L20 8H17L15 4H13L15 8H12L10 4H8L10 8H7L5 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V4Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <button class="button text icon enabled" aria-label="Share" title="Share">
+                    <span class="button-state-layer"></span>
+                    <span class="button-label">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3.51 6.03L11.02 9.25L3.5 8.25L3.51 6.03ZM11.01 14.75L3.5 17.97V15.75L11.01 14.75ZM1.51 3L1.5 10L16.5 12L1.5 14L1.51 21L22.5 12L1.51 3Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <button class="button text icon enabled " aria-label="Like" title="Like">
+                    <span class="button-state-layer"></span>
+                    <span class="button-label">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <button class="button text icon enabled " aria-label="Add" title="Add">
+                    <span class="button-state-layer"></span>
+                    <span class="button-label">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM11 17H13V13H17V11H13V7H11V11H7V13H11V17Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <button class="button text icon enabled " aria-label="Profile" title="Profile">
+                    <span class="button-state-layer"></span>
+                    <span class="button-label">
+                        <a href="./user-profile.html"> <img class="avatar-navbar" src="./../img/avatar/mainuser.png"
+                                alt=""></a>
+                    </span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="flex-header">
+            <div>
+                <img class="user-img" src="./../img/user-profile/user-img.png" alt="">
+            </div>
+            <div>
+                <ul class="list-flex">
+                    <li>Eden Amar</li>
+                    <li><button class="button filled disabled" disabled>
+                            <span class="button-state-layer"></span>
+                            <span class="button-label">Edit Profile</span>
+                        </button></li>
+                    <li><button class="button filled disabled" disabled>
+                            <span class="button-state-layer"></span>
+                            <span class="button-label">Ad Tools</span>
+                        </button></li>
+                </ul>
+                <ul class="list-flex">
+                    <li>158 posts</li>
+                    <li>2990 followers</li>
+                    <li>980 following</li>
+                </ul>
+                <ul class=" little-info">
+                    <li>
+                        Eden Amar ● עדן עמר
+                    </li>
+                    <li>Personal blog</li>
+                    <li>• Eden Amar •</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- story section -->
+    <section>
+        <div class="highlight">
+            <div>
+                <img src="./../img/highlight/highlight1.png" alt="">
+                <p>MILANO</p>
+            </div>
+            <div>
+                <img src="./../img/highlight/highlight2.png" alt="">
+                <p>BANGKOK</p>
+            </div>
+            <div>
+                <img src="./../img/highlight/highlight3.png" alt="">
+                <p>PHUKET</p>
+            </div>
+            <div>
+                <img src="./../img/highlight/highlight4.png" alt="">
+                <p>KHO PHIPHI</p>
+            </div>
+            <div>
+                <img src="./../img/highlight/highlight5.png" alt="">
+                <p>KHO SAMUI</p>
+            </div>
+            <div>
+                <img src="./../img/highlight/highlight6.png" alt="">
+                <p>BUDAPEST</p>
+            </div>
+            <div>
+                <img src="./../img/highlight/highlight7.png" alt="">
+                <p>BULGARIA</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="top-border"></div>
+        <ul class="list-flex">
+            <li class="post-top-border">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V4C22 2.9 21.1 2 20 2ZM8 20H4V16H8V20ZM8 14H4V10H8V14ZM8 8H4V4H8V8ZM14 20H10V16H14V20ZM14 14H10V10H14V14ZM14 8H10V4H14V8ZM20 20H16V16H20V20ZM20 14H16V10H20V14ZM20 8H16V4H20V8Z"
+                        fill="black" />
+                </svg>
+                POSTS
+            </li>
+            <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.2127 3.35693H7.58772C6.52897 3.35693 5.66272 4.22122 5.66272 5.27757V20.6426L12.4002 17.7617L19.1377 20.6426V5.27757C19.1377 4.22122 18.2715 3.35693 17.2127 3.35693ZM17.2127 17.7617L12.4002 15.6682L7.58772 17.7617V5.27757H17.2127V17.7617Z"
+                        fill="black" />
+                </svg>
+                SAVED
+            </li>
+            <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.67 13.13C18.04 14.06 19 15.32 19 17V20H23V17C23 14.82 19.43 13.53 16.67 13.13Z"
+                        fill="black" />
+                    <path
+                        d="M15 12C17.21 12 19 10.21 19 8C19 5.79 17.21 4 15 4C14.53 4 14.09 4.1 13.67 4.24C14.5 5.27 15 6.58 15 8C15 9.42 14.5 10.73 13.67 11.76C14.09 11.9 14.53 12 15 12Z"
+                        fill="black" />
+                    <path
+                        d="M9 12C11.21 12 13 10.21 13 8C13 5.79 11.21 4 9 4C6.79 4 5 5.79 5 8C5 10.21 6.79 12 9 12ZM9 6C10.1 6 11 6.9 11 8C11 9.1 10.1 10 9 10C7.9 10 7 9.1 7 8C7 6.9 7.9 6 9 6Z"
+                        fill="black" />
+                    <path
+                        d="M9 13C6.33 13 1 14.34 1 17V20H17V17C17 14.34 11.67 13 9 13ZM15 18H3V17.01C3.2 16.29 6.3 15 9 15C11.7 15 14.8 16.29 15 17V18Z"
+                        fill="black" />
+                </svg>
+                TAGGED
+            </li>
+        </ul>
+    </section>
+
+    <!-- grid section - post -->
+    <section class="grid-section">
+        <a href="#open-post-one">
+            <img src="./../img/post/post1.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 143
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 22
+                </div>
+            </div>
+            </div>
+        </a>
+        <div>
+            <a href="#open-post-two">
+                <img src="./../img/post/post2.png" alt="">
+                <div class="hide">
+                    <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                                fill="black" />
+                        </svg> 286
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                                fill="black" />
+                        </svg> 17
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#open-post-three">
+                <img src="./../img/post/post3.png" alt="">
+                <div class="hide">
+                    <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                                fill="black" />
+                        </svg> 176
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                                fill="black" />
+                        </svg> 45
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div> 
+            <a href="#open-post-four">
+            <img src="./../img/post/post4.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 134
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 27
+                </div>
+            </div>
+            </a>
+        </div>
+        <div> 
+            <a href="#open-post-five">
+            <img src="./../img/post/post5.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 152
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 19
+                </div>
+            </div>
+            </a>
+        </div>
+        <div> 
+            <a href="#open-post-six">
+            <img src="./../img/post/post6.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 196
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 32
+                </div>
+            </div>
+            </a>
+        </div>
+        <div> 
+            <a href="#open-post-seven">
+            <img src="./../img/post/post7.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 233
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 19
+                </div>
+            </div>
+            </a>
+        </div>
+        <div> 
+            <a href="#open-post-eight">
+            <img src="./../img/post/post8.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 123
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 43
+                </div>
+        </div>
+    </a>
+        </div>
+        <div> 
+            <a href="#open-post-nine">
+            <img src="./../img/post/post9.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 179
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 45
+                </div>
+            </div>
+        </a>
+        </div>
+        <div> 
+            <a href="#open-post-ten">
+            <img src="./../img/post/post10.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 212
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 23
+                </div>
+            </div>
+        </a>
+        </div>
+        <div> 
+            <a href="#open-post-eleven">
+            <img src="./../img/post/post11.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 113
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 16
+                </div>
+            </div>
+        </a>
+        </div>
+        <div> 
+            <a href="#open-post-twelve">
+            <img src="./../img/post/post12.png" alt="">
+            <div class="hide">
+                <div class="hide-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 2.82501C14.76 2.82501 13.09 3.63501 12 4.91501C10.91 3.63501 9.24 2.82501 7.5 2.82501C4.42 2.82501 2 5.24501 2 8.32501C2 12.105 5.4 15.185 10.55 19.865L12 21.175L13.45 19.855C18.6 15.185 22 12.105 22 8.32501C22 5.24501 19.58 2.82501 16.5 2.82501ZM12.1 18.375L12 18.475L11.9 18.375C7.14 14.065 4 11.215 4 8.32501C4 6.32501 5.5 4.82501 7.5 4.82501C9.04 4.82501 10.54 5.81501 11.07 7.18501H12.94C13.46 5.81501 14.96 4.82501 16.5 4.82501C18.5 4.82501 20 6.32501 20 8.32501C20 11.215 16.86 14.065 12.1 18.375Z"
+                            fill="black" />
+                    </svg> 157
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.99 4C21.99 2.9 21.1 2 20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22L21.99 4ZM20 4V17.17L18.83 16H4V4H20ZM6 12H18V14H6V12ZM6 9H18V11H6V9ZM6 6H18V8H6V6Z"
+                            fill="black" />
+                    </svg> 32
+                </div>
+            </div>
+        </a>
+        </div>
+    </section>
+
+    <!-- modal code -->
+    <div id="open-post-one">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post1.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt=""> maya_k <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">shoval.zipori <span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">doryosef <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user4.png" alt="">nofar123 <span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">liron_omer <span
+                                class="comment">מקום מהמם</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user6.png" alt="">oren_21 <span
+                                class="comment">מקום מהמם</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">hila401 <span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-two">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post2.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt=""> moran21 <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">orli_11 <span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">yoav__ <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">sharon.s <span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">_mor_ <span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-three">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post3.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-four">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post4.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-five">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post5.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-six">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post6.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-seven">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post7.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-eight">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post8.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-nine">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post9.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-ten">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post10.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-eleven">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post11.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="open-post-twelve">
+        <div class="modal">
+            <div class="mini-modal stretch-horizontal center-horizontal stretch-vertical center-vertical">
+                <a class="close" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="post-modal">
+                    <img class="post-img" src="./../img/post/post12.png" alt="">
+                    <ul>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/mainuser.png" alt="">eden_amar22</li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user5.png" alt="">yaron90_ <span
+                                class="comment">יפה שלי</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user3.png" alt="">avi102<span
+                                class="comment">מהממת</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user7.png" alt="">david_03 <span
+                                class="comment">מדהימה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user2.png" alt="">rachel8<span
+                                class="comment">אהובה</span></li>
+                        <li><img class="avatar-post-modal" src="./../img/avatar/user1.png" alt="">shon.2<span
+                                class="comment">מקום מהמם</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

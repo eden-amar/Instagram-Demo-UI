@@ -1,0 +1,21 @@
+@import url(./instagram.css);
+@import url(./design-system/sytles/color/colors.css);
+@import url(./design-system/sytles/shapes/shapes.css);
+@import url(./design-system/componets/buttons/buttons.css);
+body{
+    background-color: var(--color-on-surface);
+}
+.title{color: var(--color-on-primary);}
+.story img{width: 500px;border-radius: var(--shape-medium);}
+.story{
+    display: flex;
+    justify-content: center;
+
+}
+.close-button{
+  display: flex;
+  justify-content: end;
+  color: var(--color-on-primary);
+  margin-top: -2em;
+  margin-right: 2em;
+}

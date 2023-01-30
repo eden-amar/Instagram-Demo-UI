@@ -1,0 +1,143 @@
+@import url(./../../sytles/color/colors.css);
+@import url(./../../sytles/shapes/shapes.css);
+@import url(./../../sytles/elevation/);
+
+.buttons-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1em;
+}
+.button{
+    padding: 1em 2em;
+    border-radius:var(--shape-full);
+    outline: 0;
+    box-shadow: var(--elevation-0);
+    position: relative;
+    transition:
+    .2s linear color,
+    .2s linear backgroung-color,
+    .2s linear box-shadow;
+}
+.button-state-layer {
+    background-color: currentColor;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    opacity: 0;
+    border-radius: inherit;
+    transition: .2s linear opacity;
+  } 
+  .button-label {position: relative;}
+
+  .button.icon{
+    border-radius: var(--shape-circle); 
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+}
+  .button.icon.button-label{
+    display:block;
+}
+  .button.icon.svg{
+    display:block;
+  }
+  .button.icon path{
+    fill: currentColor;
+  }
+.button.filled{
+    background-color: var( --color-primary);
+    color: var(--color-on-primary);
+    border: none;
+}
+.button.filled:hover:not(:disabled),
+.button.filled.hovered:not(:disabled) {
+  box-shadow: var(--elevation-1); 
+}
+.button.filled:hover:not(:disabled) .button-state-layer,
+.button.filled.hovered:not(:disabled) .button-state-layer {
+  opacity: 0.08;
+}
+.button.filled:focus:not(:disabled),
+.button.filled.focused:not(:disabled) {
+  box-shadow: var(--elevation-0);
+}
+.button.filled:focus:not(:disabled) .button-state-layer,
+.button.filled.focused:not(:disabled) .button-state-layer {
+  opacity: 0.12;
+}
+button.filled:active:not(:disabled) .button-state-layer,
+.button.filled.pressed:not(:disabled) .button-state-layer {
+  opacity: 0.12;
+}
+.button.filled:disabled,
+.button.filled.disabled {
+  background-color: transparent;
+  color: var(--color-on-surface);
+}
+
+.button.filled:disabled .button-state-layer,
+.button.filled.disabled .button-state-layer {
+  opacity: 0.12;
+}
+.outline{
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border: var(--color-outline) 1px solid;
+}
+.button.outlined {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border: 1px solid var(--color-outline);
+  }
+  
+  .button.outlined:hover:not(:disabled) .button-state-layer,
+  .button.outlined.hovered:not(:disabled) .button-state-layer {
+    opacity: 0.08;
+  }
+  
+  .button.outlined:focus:not(:disabled) .button-state-layer,
+  .button.outlined.focused:not(:disabled) .button-state-layer {
+    opacity: 0.12;
+  }
+  
+  .button.outlined:active:not(:disabled) .button-state-layer,
+  .button.outlined.pressed:not(:disabled) .button-state-layer {
+    opacity: 0.12;
+  }
+  
+  .button.outlined:disabled,
+  .button.outlined.disabled {
+    color: var(--color-on-surface);
+  }
+  
+  .button.text {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+  }
+  
+  .button.text:hover:not(:disabled) .button-state-layer,
+  .button.text.hovered:not(:disabled) .button-state-layer {
+    opacity: 0.08;
+  }
+  
+  .button.text:focus:not(:disabled) .button-state-layer,
+  .button.text.focused:not(:disabled) .button-state-layer {
+    opacity: 0.12;
+  }
+  
+  .button.text:active:not(:disabled) .button-state-layer,
+  .button.text.pressed:not(:disabled) .button-state-layer {
+    opacity: 0.12;
+  }
+  
+  .button.text:disabled,
+  .button.text.disabled {
+    color: var(--color-on-surface);
+  }
+
+
