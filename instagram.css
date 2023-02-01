@@ -40,7 +40,7 @@ width: 100%;
     width: 64px;
 }
 .active-story ,.avatar img{
-    border: 4px solid var(--color-primary);
+    border: 2.5px solid var(--color-primary);
 }
 .main-navbar{
     display: inline-block;
@@ -50,11 +50,13 @@ width: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
-    gap: 2em;
+    margin-top: 0;
+    justify-content: center;
+    gap: 0.5em;
     padding: 0;
-    margin-left: 1em;
     position: fixed;
+    border-right: 1px solid var(--color-outline);
+    height: 100%;
 }
 
 .flex-page{
@@ -64,3 +66,45 @@ width: 100%;
     border-radius: 50%;
     width: 35px;
 }
+
+
+@media (max-width: 1000px) {
+    body{
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-navbar{
+        margin-left: -180px;
+    }
+    .card {width: 500px;} 
+    .feed{margin-right: 0;}
+    
+}
+
+@media (max-width: 850px){
+    body{width: 50%;}
+    .main-navbar{margin-left: -200px;}
+}
+
+@media (max-width: 750px){
+    .main-navbar ul{
+        display:flex; flex-direction: row;
+        align-items: flex-end;
+        border: 0;
+        gap: 0;
+        
+    }
+    .main-navbar ul li{background-color: white;}
+    .main-navbar{margin-left: -120px; margin-bottom: 2em;
+    background-color: white;}
+    .main-navbar ul li:last-child{height: 54px;}
+}
+@media (max-width: 428px) { /* iphone 12 pro max*/
+    body{max-width: 50%;}
+    .feed{max-width: 270px;}
+    .card{width: 300px;}
+    .story-navbar{gap: 0.5em;}
+    .story-navbar img{width: 40px;}
+}
+

@@ -16,6 +16,7 @@
 .card .avatar img{
     border-radius: 50%;
     max-height: 4em;
+    margin-bottom: 0.5em;
 }
 .card header{
     display: flex;

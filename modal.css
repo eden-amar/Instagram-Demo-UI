@@ -5,8 +5,12 @@
 body{
     background-color: var(--color-on-surface);
 }
-.title{color: var(--color-on-primary);}
-.story img{width: 500px;border-radius: var(--shape-medium);}
+.instagram-title {
+  font-family: "Pacifico";
+  margin: 0;
+  margin-left: 100px;
+}
+.story img{width: 231px; height: 411px; border-radius: var(--shape-medium);}
 .story{
     display: flex;
     justify-content: center;
